@@ -1,0 +1,116 @@
+/* Base CSS throughout Document */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #B22222;
+}
+
+/* CSS FOR EXERCISE #3 */
+/* Main Navigation Bar. Search Options. */
+.search-site {
+  list-style-type: none;
+  text-align: center;
+  border-radius: .5em;
+}
+.search-site > li {
+  display: inline-block;
+  font-family: Infinity, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  color: #B22222;
+  margin: 1em;
+  text-transform: uppercase;
+}
+.search-site li a {
+  color: #B22222;
+}
+/* Drop Down Menu */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  background-color: #B22222;
+  width: 10em;
+  margin-left: -2em;
+}
+.dropdown-menu li a {
+  font-family: Infinity, "Times New Roman", Times, serif;
+  font-size: .75em;
+  color: white;
+}
+.dropdown_items {
+  border-bottom: .1em solid #778899;
+}
+.dropdown_items a:hover {
+  color: #778899;
+}
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Navigation Bar. Mobile/Responsive */
+@media (max-width: 560px) {
+  .search-site > li {
+    display: block;
+  }
+  }
+
+/* CSS FOR EXERCISE #1 /*
+/* Table */
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 90%;
+  margin: 0 5% 5% 5%;
+  border-top: .15em solid #778899;
+  border-bottom: .15em solid #778899;
+}
+/* Table Header and TH Cells */
+thead {
+  text-transform: uppercase;
+  color: #778899;
+  font-size: 1.5em;
+  letter-spacing: .02em;
+  font-family: Infinity, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+th {
+  border-bottom: .1em solid #778899;
+}
+/* Setting Specifically TH Border */
+th:nth-child(1) {
+  border-right: .05em solid #778899;
+}
+th:nth-child(2) {
+  border-right: .05em solid #778899;
+}
+th:nth-child(3) {
+  border-right: .05em solid #778899;
+}
+th {
+  padding: 1em;
+}
+/* Image + Person Information */
+tr:nth-child(odd) td {
+  padding: 2.5em 1em;
+}
+tr:nth-child(even) td {
+  padding: .5em .1em;
+  border-bottom: .1em solid #778899;
+}
+td {
+  color: #B22222;
+  font-size: 1.05em;
+  font-family: Infinity, "Times New Roman", Times, serif;
+  letter-spacing: .05em;
+}
+img {
+  color: #778899;
+  font-size: .75em;
+}
